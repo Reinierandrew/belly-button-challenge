@@ -1,6 +1,7 @@
 // get the data from the specified location
 let data_source =
-  "https://2u-data-curriculum-team.s3.amazonaws.com/dataviz-classroom/v1.1/14-Interactive-Web-Visualizations/02-Homework/samples.json";
+  "https://2u-data-curriculum-team.s3.amazonaws.com/dataviz-classroom/v1.1/14-Interactive-Web-Visualizations/02-Homework/samples.json"
+  ;
 
 // add IDs to "selDataset" amd initialise the page with data from the first ID
 function init() {
@@ -37,6 +38,7 @@ function populateDemographicsBox(activesample) {
     });
   });
 }
+
 //create the barchart
 function createbarchart(activesample) {
   d3.json(data_source).then((d) => {
@@ -45,10 +47,7 @@ function createbarchart(activesample) {
 
     let barChart = [
       {
-        y: barchartData[0].otu_ids
-          .slice(0, 10)
-          .map((id) => `OTU ${id}`)
-          .reverse(),
+        y: barchartData[0].otu_ids.slice(0, 10).map((id) => `OTU ${id}`).reverse(),
         x: barchartData[0].sample_values.slice(0, 10).reverse(),
         text: barchartData[0].otu_labels.slice(0, 10).reverse(),
         type: "bar",

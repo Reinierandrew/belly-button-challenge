@@ -1,6 +1,7 @@
-#Biodiversity
+# Biodiversity
 
 In this project I analyse a set of data that represents the bacteria in peoples belly buttons. For this I created a javascript file and within that I used D3 and Plotly to create the results and output as can be seen on the index.html page.
+
 
 ![Screenshot webpage](https://user-images.githubusercontent.com/112833174/223683858-c5faa8e1-6aac-456d-a37b-1381cac9e6d2.png)
 
